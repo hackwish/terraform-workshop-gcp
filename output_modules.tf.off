@@ -1,0 +1,20 @@
+#Output Modules
+output "instance_id_module_1" {
+  value       = module.compute_machine_1.instance_id
+  description = "Instance ID"
+}
+
+output "cpu_platform_module_1" {
+  value       = module.compute_machine_1.cpu_platform
+  description = "CPU"
+}
+
+output "instance_id_module_2" {
+  value       = module.compute_machine_2.instance_id
+  description = "Instance ID"
+}
+
+output "cpu_platform_module_2" {
+  value       = module.compute_machine_2.cpu_platform
+  description = "CPU"
+}

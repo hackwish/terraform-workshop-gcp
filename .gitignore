@@ -1,0 +1,10 @@
+.terraform/*
+terraform*
+planfile
+crds.yml
+ca.crt
+*.tfvars
+*.json
+*.tfplan
+*sync-conflict*
+*.tfstate*

@@ -1,0 +1,13 @@
+module "compute_machine_1" {
+  source       = "./modules/compute"
+  name         = "test-1"
+  machine_type = "f1-micro"
+  zone         = var.zone
+}
+
+module "compute_machine_2" {
+  source       = "./modules/compute"
+  name         = "test-2"
+  machine_type = "f1-micro"
+  zone         = "us-central1-b"
+}
