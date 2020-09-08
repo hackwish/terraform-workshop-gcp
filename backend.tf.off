@@ -5,11 +5,11 @@ resource "google_storage_bucket" "tfstate-bucket" {
   location = var.region
 }
 
-terraform {
-  required_version = "~> 0.12"
-  backend "gcs" {
-    bucket      = "tfstate"
-    prefix      = "my-tfstate"
-    credentials = "serviceaccount.json"
-  }
-}
+# terraform {
+#   required_version = "~> 0.12"
+#   backend "gcs" {
+#     bucket      = "tfstate"
+#     prefix      = "my-tfstate"
+#     credentials = "serviceaccount.json"
+#   }
+# }
